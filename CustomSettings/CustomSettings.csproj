@@ -1,0 +1,149 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6EFC4AE0-A5B6-4965-99A9-FB3FF049DE2E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CustomSettings</RootNamespace>
+    <AssemblyName>CustomSettings</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.1</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>12.2</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{f23f6291-e432-493b-8e6d-f696fbcb1086}</AppFeaturePartId>
+    <WspPartId>{0d4e46b4-80e2-4dad-b54d-37867b9a696a}</WspPartId>
+    <WorkflowPartId>{7010e605-55dc-4db8-909b-fedb41ac1c76}</WorkflowPartId>
+    <CspkgPartId>{44d303b5-055b-47ed-886c-9b2ff03fa546}</CspkgPartId>
+    <SqlPackagePartId>{81d381f3-6acd-45f9-8036-df55f2115b82}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content\style.css" />
+    <Content Include="Images\dimma.png" />
+    <Content Include="Images\flag_sweden.png" />
+    <Content Include="Images\tablet.jpg" />
+    <Content Include="Pages\CustomSettings.aspx" />
+    <Content Include="Pages\CustomSettings\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\script.js" />
+    <Content Include="Scripts\scripttomorow.js" />
+    <Content Include="Scripts\weather.js" />
+    <Content Include="svg\cloudy-day-1.svg" />
+    <Content Include="svg\cloudy-day-2.svg" />
+    <Content Include="svg\cloudy-day-3.svg" />
+    <Content Include="svg\cloudy-night-1.svg" />
+    <Content Include="svg\cloudy-night-2.svg" />
+    <Content Include="svg\cloudy-night-3.svg" />
+    <Content Include="svg\cloudy.svg" />
+    <Content Include="svg\day.svg" />
+    <Content Include="svg\Elements.xml" />
+    <Content Include="svg\night.svg" />
+    <Content Include="svg\rainy-1.svg" />
+    <Content Include="svg\rainy-2.svg" />
+    <Content Include="svg\rainy-3.svg" />
+    <Content Include="svg\rainy-4.svg" />
+    <Content Include="svg\rainy-5.svg" />
+    <Content Include="svg\rainy-6.svg" />
+    <Content Include="svg\rainy-7.svg" />
+    <Content Include="svg\snowy-1.svg" />
+    <Content Include="svg\snowy-2.svg" />
+    <Content Include="svg\snowy-3.svg" />
+    <Content Include="svg\snowy-4.svg" />
+    <Content Include="svg\snowy-5.svg" />
+    <Content Include="svg\snowy-6.svg" />
+    <Content Include="svg\thunder.svg" />
+    <Content Include="svg\weather-sprite.svg" />
+    <Content Include="svg\weather.svg" />
+    <Content Include="svg\weather_sagittarius.svg" />
+    <Content Include="svg\weather_sunset.svg" />
+    <None Include="packages.config" />
+    <None Include="Pages\CustomSettings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{464e626f-23de-4126-9a55-964e337db2bd}</SharePointProjectItemId>
+    </None>
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{df841f70-6600-42df-a418-a18ee3534a3b}</SharePointProjectItemId>
+    </None>
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+    <None Include="svg\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b2ad5fda-ddd5-43bb-b058-7d24e05a3262}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{81d381f3-6acd-45f9-8036-df55f2115b82}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\App.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5f2fb1f1-24b2-4d89-a1c6-cb96cb739ef2}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fd2c839f-0087-4e22-a200-9b0741883d0d}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{73fbf89f-bf62-430e-93b2-4711b8bcf934}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{a5f5bce3-5e32-4c2e-8f4e-ccd6a4fcc974}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
